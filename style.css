@@ -1,0 +1,74 @@
+/*
+Theme Name: BaylysChild
+Theme URI:
+Description: Your child theme description text...
+Author: Your Name
+Author URI: http://www.yourdomain.com/
+Template: baylys
+Version: 1.0
+Tags: Baylys Child Theme
+*/
+
+/* Now you can start adding your own styles here. Use !important to overwrite styles if neccessary. */
+@media screen and (min-width: 1180px){
+	#site-title{
+		padding-top: 48px !important;
+	}
+	.entry-header-has-thumbnail img.wp-post-image{
+		margin-bottom: -3em;
+	}
+	.entry-header-has-thumbnail h2.entry-title{
+		background: #fff;
+	}
+	.entry-header-has-thumbnail h2.entry-title,
+	.entry-header-has-thumbnail .entry-details{
+		margin: 0 40px !important;
+		padding: 10px 20px !important;
+	}
+}
+#site-title a{
+	display: inline-block;
+	padding: 10px;
+	background: #fc4000;
+	color: #fff ! important;
+}
+#site-title a:hover{
+	background: #423F37;
+}
+#site-nav-container a#mobile-menu-btn{
+	top: .7em;
+}
+.entry-header h1.entry-title,
+.entry-header h2.entry-title a{
+	font-family: 'Alegreya', Georgia, serif;
+	font-weight: 900 !important;
+}
+.entry-header h1.entry-title,
+.entry-header h2.entry-title{
+	line-height: 1 !important;
+}
+.entry-header h1.entry-title{
+	font-size: 52px !important;
+}
+.about-image-wrap img{
+	border-radius: 50px;
+}
+.widget select{
+	background: #fff;
+	padding: .25rem;
+	font-family: inherit;
+}
+.syntaxhighlighter{
+	padding: 1em 0;
+	border-radius: .5em;
+}
+.gist table{
+	margin: 0 !important;
+}
+.entry-content code,
+.entry-content kbd,
+.entry-content tt,
+.entry-content samp{
+	font-size: 1.2rem;
+	color: #009999;
+}
