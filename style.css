@@ -14,6 +14,9 @@ Tags: Baylys Child Theme
 	#site-title{
 		padding-top: 48px !important;
 	}
+	.archive .page-header{
+		padding: 0 0 50px 7.14286%
+	}
 	.entry-header-has-thumbnail img.wp-post-image{
 		margin-bottom: -3em;
 	}
