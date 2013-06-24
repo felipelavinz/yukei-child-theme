@@ -10,7 +10,10 @@ global $content_width;
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<?php if ( ( $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), array( $content_width, $content_width ) ) ) && $image[1] >= $content_width ) : ?>
+	<?php
+		$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'loop-feature' );
+		if ( $image[1] >= 772 ) :
+	?>
 	<header class="entry-header entry-header-has-thumbnail">
 		<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php printf( esc_attr__( 'Permalink to %s', 'baylys' ), the_title_attribute( 'echo=0' ) ); ?>>"><?php the_post_thumbnail('loop-feature') ?></a>
 		<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'baylys' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
