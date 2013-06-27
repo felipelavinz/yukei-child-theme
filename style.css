@@ -9,12 +9,10 @@ Version: 1.0
 Tags: Baylys Child Theme
 */
 
-/* Now you can start adding your own styles here. Use !important to overwrite styles if neccessary. */
+
 @media screen and (min-width: 1180px){
-	#site-title{
-		padding-top: 48px !important;
-	}
-	.archive .page-header{
+	.archive .page-header,
+	.search .page-header{
 		padding: 0 0 50px 7.14286%
 	}
 	.entry-header-has-thumbnail img.wp-post-image{
@@ -29,17 +27,10 @@ Tags: Baylys Child Theme
 		padding: 10px 20px !important;
 	}
 }
-#site-title a{
-	display: inline-block;
-	padding: 10px;
-	background: #fc4000;
-	color: #fff ! important;
-}
-#site-title a:hover{
-	background: #423F37;
-}
-#site-nav-container a#mobile-menu-btn{
-	top: .7em;
+@media screen and (min-width: 480px){
+	.entry-header-has-thumbnail img.wp-post-image{
+		width: 100%;
+	}
 }
 .entry-header h1.entry-title,
 .entry-header h2.entry-title a{
@@ -53,17 +44,40 @@ Tags: Baylys Child Theme
 .entry-header h1.entry-title{
 	font-size: 52px !important;
 }
+#sidebar{
+	text-align: right;
+	font-size: 80%;
+}
+.widget-area a{
+	color: #999;
+}
+#searchform{
+	float: right;
+}
+.about-image-wrap{
+	display: inline-block;
+	float: none !important;
+	padding: 0 !important;
+	margin: 0 0 1em;
+}
 .about-image-wrap img{
 	border-radius: 50px;
+}
+.about-text{
+	max-width: 20em;
+	display: inline-block;
+}
+#sidebar .widget-title{
+	font-size: 15px;
+	color: #5F5C52;
+	padding-bottom: .8em;
+	text-transform: uppercase;
+	font-weight: normal;
 }
 .widget select{
 	background: #fff;
 	padding: .25rem;
 	font-family: inherit;
-}
-.syntaxhighlighter{
-	padding: 1em 0;
-	border-radius: .5em;
 }
 .gist table{
 	margin: 0 !important;
@@ -72,6 +86,31 @@ Tags: Baylys Child Theme
 .entry-content kbd,
 .entry-content tt,
 .entry-content samp{
-	font-size: 1.2rem;
+	font-size: 1.3rem;
+	font-family: 'Latin Modern Mono', 'Ubuntu Mono', Inconsolata, Consolas, monospace;
 	color: #009999;
+}
+.yarpp-related-widget ol{
+	max-width: 25em;
+	display: inline-block;
+}
+.yarpp-related-widget li{
+	margin-bottom: .5em;
+}
+#s{
+	border-top: 0 none !important;
+	border-right: 0 none !important;
+	border-left: 0 none !important;
+	background: #fff !important;
+	box-shadow: none !important;
+	color: #999;
+}
+.syntaxhighlighter table td.gutter .line,
+.syntaxhighlighter table td.code .line{
+	line-height: 20px !important;
+}
+@media screen and (min-width: 1180px){
+	#disqus_thread{
+		margin-left: 7.142857142857143%;
+	}
 }
