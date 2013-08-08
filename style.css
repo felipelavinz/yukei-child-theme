@@ -9,7 +9,20 @@ Version: 1.0
 Tags: Baylys Child Theme
 */
 
-
+html body{
+	font-family: 'Lato';
+	font-weight: 400;
+}
+#site-title h1 a{
+	font-weight: 900;
+}
+#site-nav li a{
+	text-transform: uppercase;
+}
+#site-nav > div > ul > li:last-child ul.children{
+	left: auto;
+	right: -20px;
+}
 @media screen and (min-width: 1180px){
 	.archive .page-header,
 	.search .page-header{
@@ -23,8 +36,20 @@ Tags: Baylys Child Theme
 	}
 	.entry-header-has-thumbnail h2.entry-title,
 	.entry-header-has-thumbnail .entry-details{
-		margin: 0 40px !important;
-		padding: 10px 20px !important;
+		margin: 0 120px 0 0;
+		padding: 10px 20px 10px 0;
+	}
+	.entry-header-has-thumbnail .entry-details{
+		margin-bottom: 1em;
+	}
+	.entry-content p{
+		margin-bottom: 1.5em;
+	}
+	#disqus_thread{
+		margin-left: 7.142857142857143%;
+	}
+	.header-image{
+		height: auto !important;
 	}
 }
 @media screen and (min-width: 480px){
@@ -34,19 +59,19 @@ Tags: Baylys Child Theme
 }
 .entry-header h1.entry-title,
 .entry-header h2.entry-title a{
-	font-family: 'Alegreya', Georgia, serif;
-	font-weight: 900 !important;
+	font-family: 'Lato', Georgia, serif;
+	font-weight: 900;
 }
 .entry-header h1.entry-title,
 .entry-header h2.entry-title{
-	line-height: 1 !important;
+	line-height: 1.2;
 }
 .entry-header h1.entry-title{
-	font-size: 52px !important;
+	font-size: 52px;
 }
 #sidebar{
 	text-align: right;
-	font-size: 80%;
+	font-size: 90%;
 }
 .widget-area a{
 	color: #999;
@@ -56,8 +81,8 @@ Tags: Baylys Child Theme
 }
 .about-image-wrap{
 	display: inline-block;
-	float: none !important;
-	padding: 0 !important;
+	float: none;
+	padding: 0;
 	margin: 0 0 1em;
 }
 .about-image-wrap img{
@@ -90,6 +115,12 @@ Tags: Baylys Child Theme
 	font-family: 'Latin Modern Mono', 'Ubuntu Mono', Inconsolata, Consolas, monospace;
 	color: #009999;
 }
+.entry-content p,
+.entry-summary p{
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	hyphens: none;
+}
 .yarpp-related-widget ol{
 	max-width: 25em;
 	display: inline-block;
@@ -97,20 +128,32 @@ Tags: Baylys Child Theme
 .yarpp-related-widget li{
 	margin-bottom: .5em;
 }
-#s{
-	border-top: 0 none !important;
-	border-right: 0 none !important;
-	border-left: 0 none !important;
-	background: #fff !important;
-	box-shadow: none !important;
+#s, #s:focus, #s:active, #s:hover{
+	border-top: 0 none;
+	border-right: 0 none;
+	border-left: 0 none;
+	background: #fff;
+	box-shadow: none;
 	color: #999;
+}
+#s:focus, #s:active, #s:hover{
+	border-color: #ccc;
+	color: #333;
+}
+.entry-content #searchform{
+	float: left;
+
 }
 .syntaxhighlighter table td.gutter .line,
 .syntaxhighlighter table td.code .line{
 	line-height: 20px !important;
 }
-@media screen and (min-width: 1180px){
-	#disqus_thread{
-		margin-left: 7.142857142857143%;
-	}
+ul#smart-archives-block li a{
+	color: #666;
+}
+ul#smart-archives-block li a:hover{
+	color: rgb(252, 64, 0);
+}
+#smart-archives-block .empty-month{
+	color: #eee;
 }
