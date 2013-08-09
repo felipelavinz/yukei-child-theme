@@ -157,3 +157,7 @@ ul#smart-archives-block li a:hover{
 #smart-archives-block .empty-month{
 	color: #eee;
 }
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+	.sidebar-content #content .post {background-image: none;}
+}
+
